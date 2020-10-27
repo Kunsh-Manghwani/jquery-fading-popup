@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>A Popup</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="../js/jquery.js"></script>
+    <script>
+        $("document").ready(function(){
+            $("#open").on("click",function(){
+                $("#container").fadeIn(2000);
+            });
+            $("#close").on("click",function(){
+                $("#container").fadeOut(2000);
+                $("body").css("background-color","black");
+            });
+        });
+    
+    </script>
+</head>
+<body>
+    <button id="open">Open</button>
+    <div class="popup-container" id="container">
+        <center>
+                <div class="popup">
+                        <button id="close">&times;</button>
+                        <h1>Hello ! </h1>
+                        <p>This is a pop Button created by Kunsh Manghwani.</p>
+                    </div>
+        </center>
+    </div>
+</body>
+</html>
